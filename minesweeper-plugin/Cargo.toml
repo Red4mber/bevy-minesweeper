@@ -1,0 +1,15 @@
+[package]
+name = "minesweeper-plugin"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[features]
+default = []
+debug = ["bevy-inspector-egui", "bevy/dynamic_linking" ]
+
+[dependencies]
+bevy = { version = "0.13.2" }
+bevy-inspector-egui = { version = "0.24.0", optional = true }
+rand = "0.8.5"
+log = "0.4.21"
